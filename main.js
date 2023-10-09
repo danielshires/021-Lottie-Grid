@@ -2,8 +2,8 @@ import './style.css'
 import lottie from 'lottie-web';
 import "@lottiefiles/lottie-player";
 
-const lottiePath01 = './lotties/01/dotty-lottie-01.json'
-const lottiePath02 = './lotties/02/dotty-lottie-02.json'
+const lottiePath01 = '/lotties/01/dotty-lottie-01.json'
+const lottiePath02 = '/lotties/02/dotty-lottie-02.json'
 
 const containerGrid = document.querySelector('.lottie-grid')
 const header = document.querySelector('.flex')
