@@ -3,6 +3,7 @@ import lottie from 'lottie-web';
 import "@lottiefiles/lottie-player";
 import lottieOne from '/lotties/01/dotty-lottie-01.json?url'
 import lottieTwo from '/lotties/02/dotty-lottie-02.json?url'
+import lottieThree from '/lotties/03/dotty-lottie-03.json?url'
 
 
 const containerGrid = document.querySelector('.lottie-grid')
@@ -30,6 +31,7 @@ createDivs(60)
 
 let lottie_1 = document.querySelector("._1");
 let lottie_2 = document.querySelector("._2");
+let lottie_3 = document.querySelector("._3");
 
 const lottieAnimation_1 = lottie.loadAnimation({
     container: lottie_1,
@@ -45,6 +47,13 @@ const lottieAnimation_2 = lottie.loadAnimation({
     autoplay: false,
     path: lottieTwo,
 });
+const lottieAnimation_3 = lottie.loadAnimation({
+    container: lottie_3,
+    renderer: 'svg',
+    loop: true,
+    autoplay: false,
+    path: lottieThree,
+});
 
 lottie_1.addEventListener('click', function () {
     lottieAnimation_1.play()
@@ -53,6 +62,11 @@ lottie_1.addEventListener('click', function () {
 lottie_2.addEventListener('click', function () {
     lottieAnimation_2.play()
 });
+
+lottie_3.addEventListener('click', function () {
+    lottieAnimation_3.play()
+});
+
 
 
 
