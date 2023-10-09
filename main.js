@@ -2,6 +2,9 @@ import './style.css'
 import lottie from 'lottie-web';
 import "@lottiefiles/lottie-player";
 
+const lottiePath01 = './lotties/01/dotty-lottie-01.json'
+const lottiePath02 = './lotties/02/dotty-lottie-02.json'
+
 const containerGrid = document.querySelector('.lottie-grid')
 const header = document.querySelector('.flex')
 
@@ -33,14 +36,14 @@ const lottieAnimation_1 = lottie.loadAnimation({
     renderer: 'svg',
     loop: true,
     autoplay: false,
-    path: './lotties/01/dotty-lottie-01.json',
+    path: lottiePath01,
 });
 const lottieAnimation_2 = lottie.loadAnimation({
     container: lottie_2,
     renderer: 'svg',
     loop: true,
     autoplay: false,
-    path: './lotties/02/dotty-lottie-02.json',
+    path: lottiePath02,
 });
 
 lottie_1.addEventListener('click', function () {
