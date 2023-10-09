@@ -10,10 +10,9 @@ body {
     cursor: none;
 }
 
-
 .cursor {
-  position: relative;
-    background-image: url(./img/cursor.svg);
+    position: relative;
+    background-image: url(/img/cursor.svg?url);
     background-size: contain;
     background-repeat: no-repeat;
     height: 64px;
