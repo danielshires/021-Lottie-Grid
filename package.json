@@ -14,5 +14,8 @@
   "main": "main.js",
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "@lottiefiles/lottie-player": "^2.0.2"
+  }
 }
