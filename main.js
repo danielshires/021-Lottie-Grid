@@ -29,49 +29,30 @@ const createDivs = ((num) => {
 createDivs(60)
 
 
-let lottie_1 = document.querySelector("._1");
-let lottie_2 = document.querySelector("._2");
-let lottie_3 = document.querySelector("._3");
+// Lotties
+function setupLottieAnimation(className, path) {
+    const lottieElement = document.querySelector('.' + className);
 
-const lottieAnimation_1 = lottie.loadAnimation({
-    container: lottie_1,
-    renderer: 'svg',
-    loop: true,
-    autoplay: false,
-    path: lottieOne,
-});
-const lottieAnimation_2 = lottie.loadAnimation({
-    container: lottie_2,
-    renderer: 'svg',
-    loop: true,
-    autoplay: false,
-    path: lottieTwo,
-});
-const lottieAnimation_3 = lottie.loadAnimation({
-    container: lottie_3,
-    renderer: 'svg',
-    loop: true,
-    autoplay: false,
-    path: lottieThree,
-});
+    const lottieAnimation = lottie.loadAnimation({
+        container: lottieElement,
+        renderer: 'svg',
+        loop: true,
+        autoplay: false,
+        path: path,
+    });
 
-lottie_1.addEventListener('click', function () {
-    lottieAnimation_1.play()
-});
+    lottieElement.addEventListener('click', function () {
+        lottieAnimation.play();
+    });
+}
 
-lottie_2.addEventListener('click', function () {
-    lottieAnimation_2.play()
-});
-
-lottie_3.addEventListener('click', function () {
-    lottieAnimation_3.play()
-});
-
-
+// Usage
+setupLottieAnimation('_1', lottieOne);
+setupLottieAnimation('_2', lottieTwo);
+setupLottieAnimation('_3', lottieThree);
 
 
 //   Cursor
-
 
 const moveCursor = (e) => {
     console.log(e.clientX)
