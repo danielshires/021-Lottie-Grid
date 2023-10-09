@@ -55,9 +55,7 @@ setupLottieAnimation('_3', lottieThree);
 //   Cursor
 
 const moveCursor = (e) => {
-    console.log(e.clientX)
-    console.log(e.clientY)
-    console.log(window)
+
     const mouseY = e.clientY;
     const mouseX = e.clientX;
     cursor.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
