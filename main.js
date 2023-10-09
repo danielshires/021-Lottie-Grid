@@ -26,7 +26,7 @@ const createDivs = ((num) => {
     }
 })
 
-createDivs(60)
+createDivs(4)
 
 
 // Lotties

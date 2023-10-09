@@ -43,6 +43,7 @@ body {
     grid-auto-rows: 1fr;
     align-items: stretch;
     z-index: 1;
+    gap: 2vw;
 }
 
 .lottie-grid::before {
