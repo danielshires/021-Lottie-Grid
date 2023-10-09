@@ -74,8 +74,11 @@ lottie_3.addEventListener('click', function () {
 
 
 const moveCursor = (e) => {
-    const mouseY = e.pageY;
-    const mouseX = e.pageX;
+    console.log(e.clientX)
+    console.log(e.clientY)
+    console.log(window)
+    const mouseY = e.clientY;
+    const mouseX = e.clientX;
     cursor.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
 }
 
