@@ -5,10 +5,11 @@ import lottieOne from '/lotties/01/dotty-lottie-01.json?url'
 import lottieTwo from '/lotties/02/dotty-lottie-02.json?url'
 import lottieThree from '/lotties/03/dotty-lottie-03.json?url'
 import lottieFour from '/lotties/04/dottie-lottie-04.json?url'
+import lottieSeven from '/lotties/07/dottie-lottie-07.json?url'
 
 
 const containerGrid = document.querySelector('.lottie-grid')
-const header = document.querySelector('.flex')
+const header = document.querySelector('header')
 
 const cursor = document.createElement('div')
 
@@ -51,6 +52,7 @@ setupLottieAnimation('_1', lottieOne);
 setupLottieAnimation('_2', lottieTwo);
 setupLottieAnimation('_3', lottieThree);
 setupLottieAnimation('_4', lottieFour);
+setupLottieAnimation('_5', lottieSeven);
 
 
 //   Cursor
