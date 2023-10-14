@@ -6,11 +6,14 @@ import lottieTwo from '/lotties/02/dotty-lottie-02.json?url'
 import lottieThree from '/lotties/03/dotty-lottie-03.json?url'
 import lottieFour from '/lotties/04/dottie-lottie-04.json?url'
 import lottieSeven from '/lotties/07/dottie-lottie-07.json?url'
+import lottieEight from '/lotties/08/dottie-lottie-08.json?url'
+import lottieNine from '/lotties/09/dottie-lottie-09.json?url'
+import lottieTen from '/lotties/010/dottie-lottie-10.json?url'
+
 
 
 const containerGrid = document.querySelector('.lottie-grid')
 const header = document.querySelector('header')
-
 const cursor = document.createElement('div')
 
 cursor.className = "cursor"
@@ -18,6 +21,7 @@ cursor.className = "cursor"
 
 document.body.insertBefore(cursor, header);
 
+// Create Divs
 
 const createDivs = ((num) => {
     for (let i = 1; i < num; i++) {
@@ -53,6 +57,9 @@ setupLottieAnimation('_2', lottieTwo);
 setupLottieAnimation('_3', lottieThree);
 setupLottieAnimation('_4', lottieFour);
 setupLottieAnimation('_5', lottieSeven);
+setupLottieAnimation('_6', lottieEight);
+setupLottieAnimation('_7', lottieNine);
+setupLottieAnimation('_8', lottieTen);
 
 
 //   Cursor
