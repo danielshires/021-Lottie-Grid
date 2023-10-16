@@ -9,6 +9,7 @@ import lottieSeven from '/lotties/07/dottie-lottie-07.json?url'
 import lottieEight from '/lotties/08/dottie-lottie-08.json?url'
 import lottieNine from '/lotties/09/dottie-lottie-09.json?url'
 import lottieTen from '/lotties/010/dottie-lottie-10.json?url'
+import lottie_011 from '/lotties/011/dottie-lottie-11.json?url'
 
 
 
@@ -60,6 +61,7 @@ setupLottieAnimation('_5', lottieSeven);
 setupLottieAnimation('_6', lottieEight);
 setupLottieAnimation('_7', lottieNine);
 setupLottieAnimation('_8', lottieTen);
+setupLottieAnimation('_9', lottie_011);
 
 
 //   Cursor
